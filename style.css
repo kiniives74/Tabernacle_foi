@@ -99,7 +99,8 @@
 /* Images plus petites sur smartphone */
 @media (max-width: 600px) {
     .iimg img {
-        max-width: 200px;
+    
+        max-width: 250px;
         
-    }
+    
 }

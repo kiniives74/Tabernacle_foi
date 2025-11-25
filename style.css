@@ -1,0 +1,105 @@
+#galery img.hidden{
+
+    display: none;
+}
+
+#galery img{
+
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+}
+
+#galery img.show{
+
+    opacity: 1;
+}
+
+.rows {
+
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    
+}
+
+.col-1{
+
+    box-shadow: 5px 5px 15px white;
+    transition: transform 0.1s;
+}
+
+.col-1:hover{
+
+    color: white;
+}
+
+
+/* --- CONTAINER GLOBAL DU SLIDER --- */
+.containerjs {
+    width: 100%;
+    overflow: hidden;
+}
+
+.rows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* --- CHEVRONS (boutons gauche/droite) --- */
+#prev, #next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border-radius: 50%;
+}
+
+/* Réduire les chevrons sur petit écran */
+@media (max-width: 600px) {
+    #prev, #next {
+        font-size: 24px;
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* --- GALERIE --- */
+.academi-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+}
+
+.academi-container::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
+/* --- IMAGES --- */
+.iimg {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+}
+
+.iimg img {
+    width: 100%;
+    
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Images plus petites sur smartphone */
+@media (max-width: 600px) {
+    .iimg img {
+        max-width: 300px;
+        
+    }
+}

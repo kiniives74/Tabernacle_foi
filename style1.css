@@ -1,0 +1,321 @@
+:root{
+
+    --orangee: #FC4E00;
+    --whitee:#FFFFFF;
+    --bleu:#7D4FFE;
+    --chocolat:#0B162C;
+    --bleu_claire:#7D4FFE;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 1.5rem 5%;
+    top: 0;
+    right: 0;
+    background-color: #D2D2EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LOGO{
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--orangee);
+}
+
+.nava_link{
+    display: flex;
+    gap: 3rem;
+}
+
+.nava_link a{
+
+    text-decoration: none;
+    color: var(--chocolat);
+    font-weight:500;
+    transition: color 0.3s;
+}
+
+.nava_link a:hover{
+
+    color: var(--orangee);
+}
+
+.cta_btn{
+
+    background-color: var(--orangee);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cta_btn:hover{
+
+    transform: translateY(-2px);
+}
+
+.Acceuil{
+
+    background-image: url(La-Joie-chretienne-Pixabay-Pete-Linforth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 8rem 5% 4rem;
+    display: grid;
+    align-items: center;
+}
+
+section p{
+
+    font-size: 2.2rem;
+    color:rgb(208, 190, 167);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section h1{
+
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--whitee);
+}
+
+.Academie{
+
+    min-height: 100vh;
+    padding: 8rem 5% 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(136, 180, 217);
+    margin-top: 20px; 
+}
+
+.s_prière{
+
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: rgb(32, 28, 28);
+    text-transform:uppercase;
+    color: var(--bleu);
+}
+
+.container_prière{
+
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 20px 30px;
+    margin-left: 30px;
+    
+}
+
+.ste{
+
+    border-radius: 5%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cld{
+
+
+    text-align: center;
+    
+    color:var(--bleu_claire);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+
+.prier{
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ,box-chadow 0.3s;
+}
+
+.prier:hover{
+
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(4, 4, 4, 0.759);
+}
+
+.Offrande_container{
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
+.item{
+
+    text-transform: uppercase;
+    display: flex;
+    gap: 10px;
+    border: 2px solid var(--orangee);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(145, 143, 143);
+    
+}
+
+.item,img{
+
+    border-radius: 10px;
+}
+
+.offrande_paragraphe{
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 5%;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.H2_offande{
+
+    text-align: center;
+    color:var(--orangee);
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+
+footer{
+
+    background-color: #3d405b;
+    padding: 4rem 5%;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+}
+
+
+.icone {
+
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    transition: transform 0.3s;
+    
+    
+}
+
+.icone a:hover{
+
+    color: var(--orangee);
+}
+
+.icn{
+
+    color: white;
+}
+
+.foot_paragraphe{
+
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+
+
+
+
+@media   (max-width: 772px) { 
+
+    .LOGO{
+        justify-content: left;
+    }
+
+
+
+    .Acceuil{
+
+        text-align: center;
+        padding-top: 128px;
+    }
+
+   header{
+
+    flex-direction: column;
+   }
+    
+    .nava_link{
+
+    display: none;
+        
+   }
+   .cta_btn{
+    display: none;
+   }
+    
+    .container_prière{
+        
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Offrande_container{
+        
+        display: block;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .item{
+        margin-top: 5%
+    }
+    
+    .containerjs{
+
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+
+
+
+
+body{
+    background-color: var(--whitee);
+    color: var(--chocolat);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

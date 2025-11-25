@@ -169,6 +169,8 @@ section h1{
     display: flex;
     justify-content: center;
     gap: 20%;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .item{

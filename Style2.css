@@ -127,3 +127,50 @@ li a:hover{
      width: 10px;
     background-color: rgb(186, 15, 15);
 }
+
+/*-----------------section a propos css----------------------*/
+
+.Apropos{
+
+
+    background-color: #eaf2ff;
+   
+
+
+}
+
+.appContainer{
+
+         margin: 5px 5px 15px 15px;
+
+}
+
+section .h2apropos{
+
+    text-align: center;
+    color: #7D4FFE ;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+
+
+
+.Apropos p{
+
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.Apropos h3{
+
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}

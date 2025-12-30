@@ -134,6 +134,7 @@ li a:hover{
 
 
     background-color: #eaf2ff;
+    margin-top: 15px;
    
 
 
@@ -173,4 +174,5 @@ section .h2apropos{
     text-align: center;
     font-weight: bolder;
     text-transform: uppercase;
+    font-style: italic;
 }
